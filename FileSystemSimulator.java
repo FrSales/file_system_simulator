@@ -1,11 +1,11 @@
 import java.util.*;
 
-public class files {
+public class FileSystemSimulator {
     private final Diretorio raiz;
     private Diretorio diretorioAtual;
 
     // Construtor
-    public files() {
+    public FileSystemSimulator() {
         this.raiz = new Diretorio("raiz");
         this.diretorioAtual = raiz;
     }
@@ -185,7 +185,7 @@ public class files {
     }
 
     public static void main(String[] args) {
-        files simulador = new files();
+        FileSystemSimulator simulador = new FileSystemSimulator();
         simulador.iniciar();
     }
 }
